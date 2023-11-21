@@ -1,17 +1,17 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import * as marked from 'marked';
+import marked from 'marked'; 
 
 const MarkdownPreview = () => {
-    const markdown = useSelector((state) => state.markdown);
-    const previewHtml = { __html: marked(markdown) };
+  const markdown = useSelector((state) => state.markdown);
+  const previewHtml = { __html: marked.parse(markdown) };
 
-    return (
-        <div>
-            <div dangerouslySetInnerHTML={previewHtml}/>
-        </div>
-    )
-}
+  return (
+    <div>
+      <div dangerouslySetInnerHTML={previewHtml} />
+    </div>
+  );
+};
 
-export default MarkdownPreview; 
+export default MarkdownPreview;
 
