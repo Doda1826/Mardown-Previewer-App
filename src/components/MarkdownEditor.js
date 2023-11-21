@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { updateMarkdown} from "../redux/actions";
+import '../style.css'
 
 const MarkdownEditor = () => {
     const dispatch = useDispatch();
@@ -12,7 +13,7 @@ const MarkdownEditor = () => {
 
     return (
         <div>
-            <textarea value={markdown} onChange={handleInputChange}/>
+            <textarea value={markdown} onChange={handleInputChange} className="bg-info"/>
         </div>
     );
 };

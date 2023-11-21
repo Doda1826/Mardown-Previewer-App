@@ -5,10 +5,12 @@ import MarkdownEditor from './components/MarkdownEditor';
 import MarkdownPreview from './components/MarkdownPreview';
 import './App.css';
 
+
 function App() {
   return (
     <Provider store={store}>
-      <div>
+      <div id='main'>
+        <h1>Markdown Previewer</h1>
         <MarkdownEditor/>
         <MarkdownPreview/>
       </div>
