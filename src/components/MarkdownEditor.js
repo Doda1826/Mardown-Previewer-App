@@ -18,10 +18,11 @@ const MarkdownEditor = () => {
 
     return (
         <div>
+            <h3 className="bg-info" id="headings-name">Editor</h3>
             <textarea 
               value={markdown} 
               onChange={handleInputChange} 
-              className="bg-info"
+              className="bg-main"
               id="editor"
             />
         </div>

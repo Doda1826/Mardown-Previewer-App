@@ -4,27 +4,44 @@
     justify-items: center;
 }
 
-h1 {
+#welcome-heading {
     margin: 5px;
+    padding: 20px;
+}
+
+#headings-name {
+    font-size: 22px;
+    margin: 0;
     padding: 5px;
+    text-align: start;
+    border: 2px solid blue;
+    border-bottom: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 #editor{
     align-content: center;
     width: 500px;
     height: 300px;
-    border: 2px solid black;
-    border-radius: 20px;
+    border: 2px solid blue;
+    border-top: none;
     padding: 10px;
-    margin: 5px;
+    margin: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 #preview{
     width: 800px;
     height: 0 auto;
-    border: 2px solid black;
-    margin: 5px;
+    border: 2px solid blue;
+    border-top: none; 
+    margin: 0;
     padding: 20px;
+    text-align: start;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 

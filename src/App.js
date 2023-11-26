@@ -10,9 +10,11 @@ function App() {
   return (
     <Provider store={store}>
       <div id='main'>
-        <h1>Markdown Previewer</h1>
+        <h1 id='welcome-heading'>Markdown Previewer</h1>
         <MarkdownEditor/>
+        <br/>
         <MarkdownPreview/>
+        <br/>
       </div>
     </Provider>
   );

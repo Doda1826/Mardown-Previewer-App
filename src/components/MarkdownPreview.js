@@ -7,9 +7,12 @@ const MarkdownPreview = () => {
   const previewHtml = { __html: marked.parse(markdown) };
 
   return (
-    <div id='preview'>
-      <div dangerouslySetInnerHTML={previewHtml} className='bg-danger'/>
-    </div>
+    <div>
+      <h3 id='headings-name' className='bg-primary'>Previewer</h3>
+      <div id='preview'>
+        <div dangerouslySetInnerHTML={previewHtml} className='bg-main'/>
+      </div>
+    </div>  
   );
 };
 

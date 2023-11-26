@@ -1,5 +1,5 @@
 const initialState = {
-    markdown: '# Welcome to my React Mardown Previewer! ## This is a sub-heading... ### And here is some other cool stuff: Heres some code, `<div></div>`, between 2 backsticks. ``` // this is multi-line code: function anotherExample(firtsLine, lastLine) { if(firtsLine == true && lastLine == false) { return multiLineCode;}}```'
+    markdown: '# Welcome to my React Mardown Previewer!\n## This is a sub-heading...\n### And here is some other cool stuff:\nHeres some code, `<div></div>`, between 2 backsticks.\n```\n// this is multi-line code:\n\nfunction anotherExample(firtsLine, lastLine) {\n\tif(firtsLine == true && lastLine == false) {\n\t\treturn multiLineCode;\n\t}\n}\n\n```'
 }
 
 const markdownReducer = (state = initialState, action) => {
